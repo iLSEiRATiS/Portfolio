@@ -1,0 +1,180 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style1.css" />
+  <title>Facundo Tomas Gallardo</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="brand-title">Facundo Tomas Gallardo</span>
+        <span class="brand-subtitle">Técnico en Programación · Desarrollador Web Trainee</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#proyectos">Proyectos</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Cambiar tema">
+        <!-- Sol -->
+        <svg class="icon icon-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M5 5l-1.4-1.4M20.4 20.4 19 19M5 19l-1.4 1.4M20.4 3.6 19 5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" fill="none"/>
+        </svg>
+        <!-- Luna -->
+        <svg class="icon icon-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="info">
+          <h1 class="title">FACUNDO TOMAS GALLARDO</h1>
+          <h2 class="subtitle">Técnico en Programación y Desarrollador Web Trainee</h2>
+          <p class="location">📍 Buenos Aires, Argentina</p>
+
+          <ul class="tech-stack" aria-label="Tecnologías">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Postman</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn ghost" href="#contacto">Contacto</a>
+          </div>
+        </div>
+
+        <!-- Si después querés foto, destapá esto y poné tu imagen en /img/foto.png -->
+        <!--
+        <div class="photo">
+          <img src="img/foto.png" alt="Foto de Facundo Tomas Gallardo" width="320" height="320" loading="lazy">
+        </div>
+        -->
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h3 class="section-title">Sobre mí</h3>
+        <p class="lead">
+          Último año de la Tecnicatura en Programación en la UTN. Me gustan los desafíos y aprender cosas nuevas.
+          Enfocado en desarrollo web y buenas prácticas. Dispuesto a sumar en equipos reales y seguir creciendo.
+        </p>
+      </div>
+    </section>
+
+    <section id="estudios" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Estudios</h3>
+        <ul class="timeline">
+          <li>
+            <h4>Tecnicatura en Programación · UTN</h4>
+            <span class="meta">En curso</span>
+          </li>
+          <li>
+            <h4>Diplomatura Full Stack Web · UTN</h4>
+            <span class="meta">Completado</span>
+          </li>
+          <li>
+            <h4>Diplomatura en Inteligencia Artificial · UTN</h4>
+            <span class="meta">Completado</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h3 class="section-title">Proyectos</h3>
+
+        <div class="cards">
+          <article class="card">
+            <header class="card-head">
+              <h4>Señoritas Estética</h4>
+            </header>
+            <p>Landing page personalizada para estética de belleza.</p>
+            <p class="stack">HTML · CSS · JavaScript</p>
+            <a class="btn small" href="https://sritasestetica.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar</a>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Sonrisa brillante</h4>
+            </header>
+            <p>Landing de consultorio dental a modo de proyecto.</p>
+            <p class="stack">HTML · CSS · JavaScript</p>
+            <a class="btn small" href="https://dientesfelices.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar</a>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Lista de tareas</h4>
+            </header>
+            <p>Mini app para crear, completar y eliminar tareas.</p>
+            <p class="stack">HTML · CSS · JavaScript</p>
+            <a class="btn small" href="https://acompletar.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Contacto</h3>
+        <ul class="contact-list">
+          <li>
+            <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=facundotomasgallardo@gmail.com" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <span>facundotomasgallardo@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-link" href="https://api.whatsapp.com/send/?phone=5491170659479" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3.1-6.3L20 8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 19l-1 4 4-1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <span>WhatsApp</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-link" href="https://www.linkedin.com/in/facundo-gallardo-106942221/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 4h4v16H4zM10 10h4v10h-4zM14 10c0-4 6-4 6 0v10h-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Ir arriba">↑</button>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Facundo Tomas Gallardo</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script>
+    // Año automático, sin drama
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
